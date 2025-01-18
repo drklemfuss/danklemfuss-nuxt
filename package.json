@@ -12,6 +12,8 @@
     "cf-typegen": "wrangler types"
   },
   "dependencies": {
+    "@nuxt/ui": "^2.21.0",
+    "@nuxtjs/color-mode": "3.5.2",
     "nuxt": "^3.15.2",
     "vue": "latest",
     "vue-router": "latest"
@@ -19,6 +21,8 @@
   "packageManager": "pnpm@9.13.2+sha512.88c9c3864450350e65a33587ab801acf946d7c814ed1134da4a924f6df5a2120fd36b46aab68f7cd1d413149112d53c7db3a4136624cfd00ff1846a0c6cef48a",
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20250109.0",
+    "@nuxt/devtools": "latest",
+    "@nuxt/types": "^2.18.1",
     "h3": "^1.13.1",
     "nitro-cloudflare-dev": "^0.2.1",
     "wrangler": "^3.103.2"
