@@ -27,8 +27,8 @@
               {{ milestone.subtitle }}
             </a>
           </span>
-          <span class="text-sm text-gray-500 mb-4">{{ milestone.date }}</span>
-          <p class="text-gray-400">{{ milestone.description }}</p>
+          <span class="text-sm text-white mb-4">{{ milestone.date }}</span>
+          <p class="text-gray-300">{{ milestone.description }}</p>
         </div>
 
         <!-- Image Section -->
@@ -45,55 +45,24 @@
 </template>
 
 <script setup>
-import position1Image from "~/assets/images/DRK_Army.jpg";
-import position2Image from "~/assets/images/cpdlc.webp";
-import position3Image from "~/assets/images/F35_PCD.avif";
-import position4Image from "~/assets/images/LiDAR.jpg";
-import position5Image from "~/assets/images/C-UAS.jpg";
-import position6Image from "~/assets/images/NB_Guam.webp";
+import position1Image from "~/assets/images/experience/DRK_Army.jpg";
+import position2Image from "~/assets/images/experience/cpdlc.webp";
+import position3Image from "~/assets/images/experience/F35_PCD.avif";
+import position4Image from "~/assets/images/experience/LiDAR.jpg";
+import position5Image from "~/assets/images/experience/C-UAS.jpg";
+import position6Image from "~/assets/images/experience/NB_Guam.webp";
 
 const milestones = [
   {
-    title: "U.S. Army ROTC",
-    subtitle: "U.S. Army Reserve Officer Training Corps",
+    title: "Lead Systems Engineer",
+    subtitle: "Naval Surface Warfare Center - Panama City Division (NSWC PCD)",
     subtitleLink:
-      "https://www.goarmy.com/careers-and-jobs/find-your-path/army-officers/rotc",
+      "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Panama-City/",
     description:
-      "Built leadership skills and honed discipline as a contracted cadet while pursuing a rigorous aerospace engineering degree.",
-    date: "2011 - 2015",
-    link: "/position1",
-    image: position1Image,
-  },
-  {
-    title: "Systems Engineer - FAA Data Comm",
-    subtitle: "L3Harris Technologies",
-    subtitleLink: "https://www.l3harris.com/datacomm",
-    description:
-      "Engineered transformative air-to-ground communication systems, enhancing aviation safety and operational efficiency.",
-    date: "2016-2021",
-    link: "/position2",
-    image: position2Image, // Credit: flightsim.io/file/79705/realacars
-  },
-  {
-    title: "Systems Engineer - F-35 JSF Panoramic Cockpit Display",
-    subtitle: "L3Harris Technologies",
-    subtitleLink:
-      "https://www.l3harris.com/all-capabilities/f-35-lightning-ii-avionics",
-    description:
-      "Contributed to the development/test of advanced avionics for the F-35, delivering state-of-the-art cockpit technology to enhance pilot readiness.",
-    date: "2021-2021",
-    link: "/position3",
-    image: position3Image, // Credit: photo by Ben Hendren
-  },
-  {
-    title: "Research & Development Engineer",
-    subtitle: "Indus Technologies",
-    subtitleLink: "https://www.industechnology.com/",
-    description:
-      "Pioneered advancements in autonomous systems and sensor technologies, driving R&D excellence.",
-    date: "2021-2022",
-    link: "/position4",
-    image: position4Image, // Credit: photo by Velodyne LiDAR
+      "Led complex naval systems engineering projects, ensuring mission success across global Navy installation operations.",
+    date: "2023-2024",
+    link: "/position6",
+    image: position6Image, // Credit: photo by dvids
   },
   {
     title: "Lead C-UAS Integration & Test Engineer",
@@ -107,15 +76,46 @@ const milestones = [
     image: position5Image, // Credit: photo by Teledyne FLIR
   },
   {
-    title: "Lead Systems Engineer",
-    subtitle: "Naval Surface Warfare Center - Panama City Division (NSWC PCD)",
-    subtitleLink:
-      "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Panama-City/",
+    title: "Research & Development Engineer",
+    subtitle: "Indus Technologies",
+    subtitleLink: "https://www.industechnology.com/",
     description:
-      "Led complex naval systems engineering projects, ensuring mission success across global Navy installation operations.",
-    date: "2023-2024",
-    link: "/position6",
-    image: position6Image, // Credit: photo by dvids
+      "Pioneered advancements in autonomous systems and sensor technologies, driving R&D excellence.",
+    date: "2021-2022",
+    link: "/position4",
+    image: position4Image, // Credit: photo by Velodyne LiDAR
+  },
+  {
+    title: "Systems Engineer - F-35 JSF Panoramic Cockpit Display",
+    subtitle: "L3Harris Technologies",
+    subtitleLink:
+      "https://www.l3harris.com/all-capabilities/f-35-lightning-ii-avionics",
+    description:
+      "Contributed to the development/test of advanced avionics for the F-35, delivering state-of-the-art cockpit technology to enhance pilot readiness.",
+    date: "2021-2021",
+    link: "/position3",
+    image: position3Image, // Credit: photo by Ben Hendren
+  },
+  {
+    title: "Systems Engineer - FAA Data Comm",
+    subtitle: "L3Harris Technologies",
+    subtitleLink: "https://www.l3harris.com/datacomm",
+    description:
+      "Engineered transformative air-to-ground communication systems, enhancing aviation safety and operational efficiency.",
+    date: "2016-2021",
+    link: "/position2",
+    image: position2Image, // Credit: flightsim.io/file/79705/realacars
+  },
+  {
+    title: "U.S. Army ROTC",
+    subtitle: "U.S. Army Reserve Officer Training Corps",
+    subtitleLink:
+      "https://www.goarmy.com/careers-and-jobs/find-your-path/army-officers/rotc",
+    description:
+      "Built leadership skills and honed discipline as a contracted cadet while pursuing a rigorous aerospace engineering degree.",
+    date: "2011 - 2015",
+    link: "/position1",
+    image: position1Image,
   },
 ];
 </script>

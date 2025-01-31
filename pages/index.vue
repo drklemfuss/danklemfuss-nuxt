@@ -1,14 +1,12 @@
 <template>
-  <div class="about-page bg-gray-100 dark:bg-gray-900">
-    <!-- Hero Section -->
+  <div
+    class="about-page bg-gradient-to-r from-gray-100 to-gray-300 dark:from-gray-800 dark:to-gray-900"
+  >
     <HeroSection />
-    <!-- Stats Ribbon -->
     <StatsRibbon />
-
-    <!-- Professional Journey with Interactive Timeline -->
     <ExperienceTimeline />
-    <!-- Education -->
     <EducationSection />
+    <AwardSection />
   </div>
 </template>
 
@@ -17,14 +15,7 @@ import StatsRibbon from "~/components/sections/StatsRibbon.vue";
 import HeroSection from "~/components/sections/HeroSection.vue";
 import ExperienceTimeline from "~/components/sections/ExperienceTimeline.vue";
 import EducationSection from "~/components/sections/EducationSection.vue";
-const awards = [
-  {
-    name: "NSWC PCD",
-    from: "NSWC PCD",
-    description: "",
-    date: "2024",
-  },
-];
+import AwardSection from "~/components/sections/AwardsSection.vue";
 </script>
 
 <style scoped>

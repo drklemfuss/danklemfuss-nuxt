@@ -13,7 +13,7 @@
       </div>
       <div class="stat-item text-center px-4 py-2">
         <p class="text-5xl font-bold text-purple-500">$30M+</p>
-        <p class="text-lg text-white">Dollars Saved</p>
+        <p class="text-lg text-white">Program Funds Saved</p>
       </div>
     </div>
   </section>

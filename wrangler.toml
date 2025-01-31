@@ -1,0 +1,12 @@
+name = "my-pages-project"
+main = "./functions/index.js"
+
+# Environment configurations (no sensitive info)
+[env]
+workers_dev = true
+
+# R2 Bucket Binding
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "danklemfuss-images"
+preview_bucket_name = "danklemfuss-images" 

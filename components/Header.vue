@@ -2,6 +2,7 @@
   <div
     class="flex justify-between items-center p-4 border-b border-gray-200 dark:border-gray-700 bg-gradient-to-tr from-gray-900 to-gray-700 sticky top-0 z-50"
   >
+    <span class="text-4xl font-bold text-purple-700">DRK</span>
     <!-- Hamburger Icon for Small Screens -->
     <div class="sm:hidden">
       <UButton
@@ -16,11 +17,17 @@
 
     <!-- Navigation Links (Hidden on Small Screens) -->
     <div class="hidden sm:flex space-x-4" :class="{ hidden: !isMenuOpen }">
-      <UButton icon="i-lucide-user" to="/" variant="link"> About </UButton>
+      <UButton icon="i-lucide-user" to="/" variant="link" class="text-white">
+        About
+      </UButton>
 
       <!-- Portfolio Dropdown -->
       <div class="relative group">
-        <UButton icon="i-lucide-briefcase" variant="link" class="relative">
+        <UButton
+          icon="i-lucide-briefcase"
+          variant="link"
+          class="relative text-white"
+        >
           Experience
         </UButton>
         <div
@@ -37,10 +44,20 @@
           </router-link>
         </div>
       </div>
-      <UButton icon="i-lucide-globe" to="/travel" variant="link">
+      <UButton
+        icon="i-lucide-globe"
+        to="/travel"
+        variant="link"
+        class="text-white"
+      >
         Travel
       </UButton>
-      <UButton icon="i-lucide-mail" to="/contact" variant="link">
+      <UButton
+        icon="i-lucide-mail"
+        to="/contact"
+        variant="link"
+        class="text-white"
+      >
         Contact
       </UButton>
     </div>
@@ -100,7 +117,7 @@ const milestones = [
   },
   {
     title: "Research & Development Engineer",
-    company: "Indus",
+    company: "Indus Technologies",
     link: "/position4",
   },
   {

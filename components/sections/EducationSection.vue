@@ -1,7 +1,7 @@
 <template>
   <section id="education">
     <div
-      class="education-section bg-gradient-to-t from-gray-900 to-gray-800 py-16"
+      class="education-section bg-gradient-to-tr from-gray-700 to-gray-500 dark:from-gray-900 dark:to-gray-700 py-16"
     >
       <h2 class="text-4xl text-white font-semibold text-center mb-8">
         Education
@@ -10,11 +10,11 @@
         <div
           v-for="(education, index) in educations"
           :key="index"
-          class="education-item flex flex-col md:flex-row items-start justify-between max-w-7xl w-full border border-gray-500 p-8 rounded-2xl bg-gray-800 mb-4"
+          class="education-item flex flex-col md:flex-row items-start justify-between max-w-7xl w-full border border-gray-500 p-8 rounded-2xl bg-gray-200 dark:bg-gray-800 mb-4 shadow-md shadow-black"
         >
           <!-- Left Side: Degree and University Info -->
           <div class="left-side md:w-1/2">
-            <h3 class="text-2xl font-bold text-white">
+            <h3 class="text-2xl font-bold">
               {{ education.degree }}
             </h3>
             <a
@@ -25,7 +25,7 @@
             >
               {{ education.university }}
             </a>
-            <p class="text-white">Graduation: {{ education.graduation }}</p>
+            <p>Graduation: {{ education.graduation }}</p>
             <div class="university-logo my-4">
               <img
                 v-if="education.image"
@@ -34,20 +34,18 @@
                 class="w-32 h-auto"
               />
             </div>
-            <p class="text-gray-500">{{ education.location }}</p>
-            <p class="text-gray-400 mt-4">
-              Achievements: {{ education.description }}
+            <p>{{ education.location }}</p>
+            <p class="font-bold mt-4">
+              Academic Achievements: {{ education.description }}
             </p>
           </div>
 
           <!-- Right Side: Highlighted Coursework -->
           <div
-            class="right-side md:w-1/2 mt-4 md:mt-0 flex flex-col justify-start"
+            class="right-side md:w-1/2 mt-4 md:mt-0 flex flex-col justify-start p-4"
           >
-            <h4 class="text-xl font-semibold text-gray-300 mb-4">
-              Highlighted Coursework:
-            </h4>
-            <ul class="list-disc list-inside text-gray-400">
+            <h4 class="text-xl font-semibold mb-4">Highlighted Coursework:</h4>
+            <ul class="list-disc list-inside">
               <li v-for="(course, idx) in education.coursework" :key="idx">
                 {{ course }}
               </li>
@@ -60,9 +58,26 @@
 </template>
 
 <script setup>
-import erauLogo from "~/assets/images/ERAU.svg";
-import fitLogo from "~/assets/images/FIT.svg";
+import erauLogo from "~/assets/images/education/ERAU.svg";
+import fitLogo from "~/assets/images/education/FIT.svg";
 const educations = [
+  {
+    degree: "Master of Science - Systems Engineering",
+    university: "Florida Institute of Technology",
+    description: "4.0 GPA",
+    location: "Melbourne, FL",
+    graduation: "2021",
+    coursework: [
+      "Decisions and Risk Analysis",
+      "Model-Based Systems Engineering",
+      "Research Methods in Systems Engineering",
+      "Systems Engineering Design Project",
+      "Systems Modeling & Analysis",
+      "Systems Requirements Analysis",
+    ],
+    image: fitLogo,
+    link: "https://www.fit.edu/",
+  },
   {
     degree: "Bachelor of Science - Aerospace Engineering",
     university: "Embry Riddle Aeronautical University",
@@ -86,23 +101,6 @@ const educations = [
     ],
     image: erauLogo,
     link: "https://www.erau.edu",
-  },
-  {
-    degree: "Master of Science - Systems Engineering",
-    university: "Florida Institute of Technology",
-    description: "4.0 GPA",
-    location: "Melbourne, FL",
-    graduation: "2021",
-    coursework: [
-      "Decisions and Risk Analysis",
-      "Model-Based Systems Engineering",
-      "Research Methods in Systems Engineering",
-      "Systems Engineering Design Project",
-      "Systems Modeling & Analysis",
-      "Systems Requirements Analysis",
-    ],
-    image: fitLogo,
-    link: "https://www.fit.edu/",
   },
 ];
 </script>

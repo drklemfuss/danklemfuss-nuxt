@@ -13,7 +13,12 @@
         <h1
           class="text-4xl md:text-6xl font-bold mb-4"
           style="
-            background: linear-gradient(to bottom, #7c3aed, #5b21b6);
+            background: linear-gradient(
+              to bottom right,
+              purple,
+              #7c3aed,
+              #5b21b6
+            );
             -webkit-background-clip: text;
             -moz-background-clip: text;
             -ms-background-clip: text;
@@ -33,7 +38,7 @@
       <div class="image-section m-12 md:w-1/2 px-6 lg:m-24">
         <img
           :src="droneImage"
-          alt="Futuristic Drone"
+          alt="Drone Image"
           class="w-full rounded-3xl shadow-md shadow-purple-900"
           style="filter: drop-shadow(0 0 15px rgba(128, 90, 213, 0.6))"
         />
@@ -43,9 +48,5 @@
 </template>
 
 <script setup>
-import droneImage from "~/assets/images/drone_background.webp";
+import droneImage from "~/assets/images/hero/drone_background.webp";
 </script>
-
-<style scoped>
-/*Placeholder */
-</style>

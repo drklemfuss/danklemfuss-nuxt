@@ -12,6 +12,7 @@
     "cf-typegen": "wrangler types"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.735.0",
     "@nuxt/ui": "^2.21.0",
     "@nuxtjs/color-mode": "3.5.2",
     "nuxt": "^3.15.2",
